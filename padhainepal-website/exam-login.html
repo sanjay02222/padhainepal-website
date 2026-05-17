@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padhainepal | Online Exam Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-book-open-reader"></i></span>
+        <span>
+          <strong>Padhainepal</strong>
+          <small>Nepal No.1 Learning Platform</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#features">Notes</a></li>
+        <li><a href="exam-login.html" id="onlineExamBtn">Online Exam</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#contact" class="btn btn-red desktop-btn">Join Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================
+         ONLINE EXAM LOGIN PAGE
+    ========================= -->
+    <section class="exam-login-section" id="examLoginSection">
+      <div class="exam-login-container">
+
+        <div class="exam-login-left">
+          <h2>Start Your Online Exam</h2>
+          <p>
+            Enter your details below to access the exam dashboard, attempt mock tests, and track your performance.
+          </p>
+
+          <div class="exam-login-points">
+            <span><i class="fa-solid fa-circle-check"></i> Free practice tests</span>
+            <span><i class="fa-solid fa-circle-check"></i> Instant dashboard access</span>
+            <span><i class="fa-solid fa-circle-check"></i> Score and progress tracking</span>
+          </div>
+        </div>
+
+        <div class="exam-login-box">
+          <h3>Student Login</h3>
+
+          <form id="examLoginForm">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="studentName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label>Address</label>
+              <input type="text" id="studentAddress" placeholder="Enter your address" required>
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="studentEmail" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input type="tel" id="studentMobile" placeholder="Enter your mobile number" required>
+            </div>
+
+            <button type="submit" class="exam-login-btn">Open Exam Dashboard</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="examDashboardSection" class="section exam-dashboard-section hidden">
+      <div class="container">
+        <div class="dashboard-card">
+          <aside class="dash-sidebar">
+            <strong>Your Exam Dashboard</strong>
+            <span><i class="fa-solid fa-house"></i> Dashboard</span>
+            <span><i class="fa-solid fa-file-lines"></i> My Tests</span>
+            <span><i class="fa-solid fa-pen-to-square"></i> Mock Tests</span>
+            <span><i class="fa-solid fa-chart-pie"></i> Analytics</span>
+            <span><i class="fa-solid fa-gear"></i> Settings</span>
+          </aside>
+          <div class="dash-content">
+            <div class="dashboard-welcome" id="dashboardWelcome">Welcome, Student Name</div>
+            <div class="stats-row">
+              <div><small>Tests Attempted</small><strong>24</strong></div>
+              <div><small>Average Score</small><strong>72%</strong></div>
+              <div><small>Highest Score</small><strong>92%</strong></div>
+              <div><small>Rank</small><strong>#1,248</strong></div>
+            </div>
+            <div class="graph-box">
+              <div class="graph-line"></div>
+            </div>
+            <div class="subject-box">
+              <div class="donut">72%</div>
+              <ul>
+                <li>GK <b>78%</b></li>
+                <li>Math <b>68%</b></li>
+                <li>English <b>72%</b></li>
+                <li>Nepali <b>74%</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html#home" class="logo footer-logo">
+          <span class="logo-icon"><i class="fa-solid fa-book-open-reader"></i></span>
+          <span><strong>Padhainepal</strong><small>Nepal No.1 Learning Platform</small></span>
+        </a>
+        <p>Empowering students across Nepal with quality education, expert guidance and smart exam preparation.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+
+      <div><h3>Quick Links</h3><a href="index.html#home">Home</a><a href="index.html#courses">Courses</a><a href="index.html#features">Notes</a><a href="exam-login.html">Online Exam</a><a href="index.html#about">About Us</a></div>
+      <div><h3>Courses</h3><a href="#">Loksewa</a><a href="#">Teacher Service Commission</a><a href="#">MBBS Entrance</a><a href="#">Nursing Entrance</a><a href="#">CMAT</a></div>
+      <div><h3>Support</h3><a href="#">Help Center</a><a href="#">FAQs</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a><a href="#">Refund Policy</a></div>
+      <div><h3>Contact Us</h3><p><i class="fa-solid fa-mobile-screen"></i> 9869933353</p><p><i class="fa-solid fa-mobile-screen"></i> 9867527352</p><p><i class="fa-solid fa-envelope"></i> info@padhainepal.com</p><p><i class="fa-solid fa-location-dot"></i> Nayagaun,Butwal, Nepal</p></div>
+    </div>
+
+    <div class="container copyright">
+      <p>© 2023 Padhainepal. All Rights Reserved.</p>
+      <p>Made in Nepal 🇳🇵</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

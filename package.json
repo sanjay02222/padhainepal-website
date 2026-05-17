@@ -1,0 +1,15 @@
+{
+  "name": "padhainepal-website",
+  "version": "1.0.0",
+  "description": "Static website for Padha Nepal.",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve padhainepal-website",
+    "build": "echo \"No build step required for this static website.\"",
+    "postinstall": "echo \"Dependencies installed successfully. Run npm start to preview the website.\""
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
